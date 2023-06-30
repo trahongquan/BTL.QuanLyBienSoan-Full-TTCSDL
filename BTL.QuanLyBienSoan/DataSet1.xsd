@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyBienSoanConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyBienSoanConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BTL.QuanLyBienSoan.Properties.Settings.GlobalReference.Default.QuanLyBienSoanConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyBienSoanConnectionString (Settings)" DbObjectName="QuanLyBienSoan.dbo.TaiLieuBienSoan" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM TaiLieuBienSoan
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaTaiLieu" DataSetColumn="MaTaiLieu" />
+              <Mapping SourceColumn="TenTaiLieu" DataSetColumn="TenTaiLieu" />
+              <Mapping SourceColumn="MaLoai" DataSetColumn="MaLoai" />
+              <Mapping SourceColumn="MaHocPhan" DataSetColumn="MaHocPhan" />
+              <Mapping SourceColumn="MaKhoa" DataSetColumn="MaKhoa" />
+              <Mapping SourceColumn="MaTroLy" DataSetColumn="MaTroLy" />
+              <Mapping SourceColumn="NamNghiemThu" DataSetColumn="NamNghiemThu" />
+              <Mapping SourceColumn="KinhPhi" DataSetColumn="KinhPhi" />
+              <Mapping SourceColumn="GhiChu" DataSetColumn="GhiChu" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_UserTableName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaTaiLieu" msprop:Generator_ColumnPropNameInRow="MaTaiLieu" msprop:Generator_ColumnPropNameInTable="MaTaiLieuColumn" msprop:Generator_ColumnVarNameInTable="columnMaTaiLieu" msprop:Generator_UserColumnName="MaTaiLieu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenTaiLieu" msprop:Generator_ColumnPropNameInRow="TenTaiLieu" msprop:Generator_ColumnPropNameInTable="TenTaiLieuColumn" msprop:Generator_ColumnVarNameInTable="columnTenTaiLieu" msprop:Generator_UserColumnName="TenTaiLieu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaLoai" msprop:Generator_ColumnPropNameInRow="MaLoai" msprop:Generator_ColumnPropNameInTable="MaLoaiColumn" msprop:Generator_ColumnVarNameInTable="columnMaLoai" msprop:Generator_UserColumnName="MaLoai" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaHocPhan" msprop:Generator_ColumnPropNameInRow="MaHocPhan" msprop:Generator_ColumnPropNameInTable="MaHocPhanColumn" msprop:Generator_ColumnVarNameInTable="columnMaHocPhan" msprop:Generator_UserColumnName="MaHocPhan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaKhoa" msprop:Generator_ColumnPropNameInRow="MaKhoa" msprop:Generator_ColumnPropNameInTable="MaKhoaColumn" msprop:Generator_ColumnVarNameInTable="columnMaKhoa" msprop:Generator_UserColumnName="MaKhoa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaTroLy" msprop:Generator_ColumnPropNameInRow="MaTroLy" msprop:Generator_ColumnPropNameInTable="MaTroLyColumn" msprop:Generator_ColumnVarNameInTable="columnMaTroLy" msprop:Generator_UserColumnName="MaTroLy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamNghiemThu" msprop:Generator_ColumnPropNameInRow="NamNghiemThu" msprop:Generator_ColumnPropNameInTable="NamNghiemThuColumn" msprop:Generator_ColumnVarNameInTable="columnNamNghiemThu" msprop:Generator_UserColumnName="NamNghiemThu" type="xs:int" minOccurs="0" />
+              <xs:element name="KinhPhi" msprop:Generator_ColumnPropNameInRow="KinhPhi" msprop:Generator_ColumnPropNameInTable="KinhPhiColumn" msprop:Generator_ColumnVarNameInTable="columnKinhPhi" msprop:Generator_UserColumnName="KinhPhi" type="xs:int" minOccurs="0" />
+              <xs:element name="GhiChu" msprop:Generator_ColumnPropNameInRow="GhiChu" msprop:Generator_ColumnPropNameInTable="GhiChuColumn" msprop:Generator_ColumnVarNameInTable="columnGhiChu" msprop:Generator_UserColumnName="GhiChu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:MaTaiLieu" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
